@@ -1,0 +1,116 @@
+local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
+
+local X = Material.Load({
+    Title = "SnowyWare                           [click the menu icon for more options]",
+    Style = 3,
+    SizeX = 500,
+    SizeY = 350,
+    Theme = "Jester",
+    ColorOverrides = {
+        MainFrame = Color3.fromRGB(255, 255, 255)
+    }
+})
+
+local Y = X.New({
+    Title = "Streamables"
+})
+
+local Z = X.New({
+    Title = "Catch the lockers"
+})
+
+local A = Y.Button({
+    Text = "Silent Aim",
+    Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/exowarex/DaHoodGUI/main/benX", true))()
+    
+    end,
+    Menu = {
+        Information = function(self)
+            X.Banner({
+                Text = "Silent aim is a complex hacking technique that gives the user the appearance of facing one direction while being able to fire in another."
+            })
+        end
+    }
+})
+local A = Y.Button({
+    Text = "Camlock (Q)",
+    Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/exowarex/DaHoodGUI/main/Camlock", true))()
+    
+    end,
+    Menu = {
+        Information = function(self)
+            X.Banner({
+                Text = "aimbot (plural aimbots) (video games) A program or patch that allows the player to cheat by having the character's weapon aimed automatically."
+            })
+        end
+    }
+})
+local A = Y.Button({
+    Text = "Pink Dot (Q)",
+    Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/exowarex/DaHoodGUI/main/PinkDot", true))()
+    
+    end,
+    Menu = {
+        Information = function(self)
+            X.Banner({
+                Text = "Goes well with the Aimbot."
+            })
+        end
+    }
+})
+
+local A = Z.Button({
+    Text = "AimViewer",
+    Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/exowarex/guiwontwork/main/workzzz", true))()
+    
+    end,
+    Menu = {
+        Information = function(self)
+            X.Banner({
+                Text = "Views everyones aim."
+            })
+        end
+    }
+})
+
+local A = Z.Button({
+    Text = "AntiLock (C)",
+    Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/exowarex/SnowyWareOpenSource/main/AntiLock", true))()
+    
+    end,
+    Menu = {
+        Information = function(self)
+            X.Banner({
+                Text = "AntiLocks to catch lockers."
+            })
+        end
+    }
+})
+
+local A = Z.Button({
+    Text = "Frame Script",
+    Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/exowarex/SnowyWareOpenSource/main/FrameScript", true))()
+    
+    end,
+    Menu = {
+        Information = function(self)
+            X.Banner({
+                Text = "Spoofs characters"
+            })
+        end
+    }
+})
+
+local A = Z.Button({
+    Text = "Crash Client",
+    Callback = function() game:shutdown()
+    
+    end,
+    Menu = {
+        Information = function(self)
+            X.Banner({
+                Text = "shutdown game using game:shutdown()"
+            })
+        end
+    }
+})
