@@ -16,7 +16,7 @@ local Y = X.New({
 })
 
 local Z = X.New({
-    Title = "Catch the lockers"
+    Title = "MISC"
 })
 
 local A = Y.Button({
@@ -88,18 +88,48 @@ local A = Z.Button({
 })
 
 local A = Z.Button({
-    Text = "Frame Script",
-    Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/exowarex/SnowyWareOpenSource/main/FrameScript", true))()
+    Text = "No jump cooldown",
+    Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/exowarex/randomly-generated-text/main/ddsdsds", true))()
     
     end,
     Menu = {
         Information = function(self)
             X.Banner({
-                Text = "Spoofs characters"
+                Text = "makes it so theres no jump cooldown"
             })
         end
     }
 })
+
+local A = Z.Button({
+    Text = "motion blur",
+    Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/exowarex/randomly-generated-text/main/vv", true))()
+    
+    end,
+    Menu = {
+        Information = function(self)
+            X.Banner({
+                Text = "motion blur"
+            })
+        end
+    }
+})
+
+local A = Z.Button({
+    Text = "client sided headless",
+    Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/exowarex/WebhookBasedLogger/main/notaloge", true))()
+    
+    end,
+    Menu = {
+        Information = function(self)
+            X.Banner({
+                Text = "adds headless to only your client"
+            })
+        end
+    }
+})
+
+
 
 local A = Z.Button({
     Text = "Crash Client",
